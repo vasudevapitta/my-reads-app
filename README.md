@@ -4,11 +4,9 @@ This is a React project - which is part of the Udacity Front End Developer Nanod
 ## Instructions
 
 To get started:
-..*Download or clone the repo and cd into the project folder
-
-..*Run npm install
-
-..*Then npm start
+*Download or clone the repo and cd into the project folder
+*Run npm install
+*Then npm start
 
 ## What You're Getting
 ```bash
