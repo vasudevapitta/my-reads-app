@@ -1,15 +1,14 @@
 # MyReads Project
+This is a React project - which is part of the Udacity Front End Developer Nanodegree
 
-This is final assessment project for Udacity's React Fundamentals course. Udacity My Reads App. This app allows user to place selected books into a designated shelf. The Main page has the Currently Reading, Want To Read, Read, None and Search. Based on the selected option from the dropdown the books are moved into the designated shelf. The search page will allow the user to search for books.
+## Instructions
 
-The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
+To get started:
+..*Download or clone the repo and cd into the project folder
 
-## TL;DR
+..*Run npm install
 
-To get started developing right away:
-
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+..*Then npm start
 
 ## What You're Getting
 ```bash
