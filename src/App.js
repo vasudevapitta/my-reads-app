@@ -11,16 +11,19 @@ class BooksApp extends Component {
     books: []
   }
 
+//refetches books from backend and assigns them to the books array in the state triggering a re-render
   refreshStuff(){
     BooksAPI.getAll().then((books) => {
       this.setState({ books: books })
     })
   }
 
+//function which gets invoked right after the component is first rendered to the DOM
   componentDidMount(){
     this.refreshStuff()
   }
 
+//updates the book's shelf when user changes the shelf for the book
   updateShelf = (book, shelf) => {
     BooksAPI.update(book, shelf).then((book) => {
       this.refreshStuff()

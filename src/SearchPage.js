@@ -18,19 +18,22 @@ class SearchPage extends Component {
   }
 
   updateBookResults = (newQuery) => {
+    
     if(newQuery){
-    BooksAPI.search(newQuery).then((bookResultsResp)=>{
-      if(bookResultsResp.error){
-        this.setState({ bookResults: [] });
-      }
-      else {
-        this.setState({ bookResults: bookResultsResp })
-      }
-    })
+        BooksAPI.search(newQuery).then((bookResultsResp)=>{
+            if(bookResultsResp.error){
+              this.setState({ bookResults: [] });
+            }
+            else {
+              this.setState({ bookResults: bookResultsResp })
+            }
+        })
     }
+
     else {
       this.setState({ bookResults: [] });
     }
+
   }
 
 	render(){
