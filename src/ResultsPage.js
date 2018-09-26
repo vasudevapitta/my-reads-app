@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Book from './Book'
+import PropTypes from 'prop-types'
+
 
 class ResultsPage extends Component {
   render(){
@@ -88,6 +90,11 @@ class ResultsPage extends Component {
         </div>
     )
   }
+}
+
+ResultsPage.propTypes = {
+  booksProp: PropTypes.array.isRequired,
+  updateShelfProp: PropTypes.func.isRequired
 }
 
 export default ResultsPage
